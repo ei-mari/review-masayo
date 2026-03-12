@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masayo Review</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-student="masayo">
+    <main class="page-shell">
+      <section class="hero score-stage">
+        <div class="hero-copy-block">
+          <p class="eyebrow">FINAL EXAM RESULT</p>
+          <h1 id="page-title">採点結果</h1>
+        </div>
+        <div class="score-frame">
+          <p class="score-label">SCORE</p>
+          <p class="score-number" id="rounded-score">0</p>
+          <p class="score-caption" id="score-caption"></p>
+        </div>
+        <div class="hero-display-word" id="hero-display-word">FINAL REVIEW</div>
+      </section>
+
+      <section class="legend-panel">
+        <div class="section-heading">
+          <h2>Color Key</h2>
+          <p>色の意味を固定して、全文で同じルールで表示します。</p>
+        </div>
+        <div class="legend-grid" id="legend"></div>
+      </section>
+
+      <section class="summary-panel">
+        <div class="section-heading">
+          <h2>Category Summary</h2>
+          <p>カテゴリごとの指摘数です。</p>
+        </div>
+        <div class="summary-grid" id="summary"></div>
+      </section>
+
+      <section class="results-panel">
+        <div class="section-heading">
+          <h2>Sentence Review</h2>
+          <p>各文ごとに、英文ハイライトとコメントを並べています。</p>
+        </div>
+        <div class="card-list" id="results"></div>
+      </section>
+    </main>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
